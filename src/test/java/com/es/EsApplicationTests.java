@@ -1,7 +1,8 @@
+/*
 package com.es;
 
 import com.es.entity.Person;
-import com.es.entity.mapper.PersonMapper;
+import com.es.mapper.PersonMapper;
 import org.elasticsearch.index.query.*;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -84,8 +85,9 @@ class EsApplicationTests {
 	}
 	@Test
 	public void test4(){
-		List<Person> people = personMapper.myWay("29");
-		System.out.println(people);
+		List list=new ArrayList();
+		list.add(new Person());
 	}
 
 }
+*/

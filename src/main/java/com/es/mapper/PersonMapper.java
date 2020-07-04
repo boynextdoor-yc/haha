@@ -1,10 +1,9 @@
-package com.es.entity.mapper;
+/*
+package com.es.mapper;
 
 import com.es.entity.Person;
 import org.springframework.data.elasticsearch.annotations.Query;
-import org.springframework.data.elasticsearch.repository.ElasticsearchCrudRepository;
 import org.springframework.data.elasticsearch.repository.ElasticsearchRepository;
-import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -20,3 +19,4 @@ import java.util.List;
             "}")
     public  List<Person> myWay(String age);
 }
+*/
