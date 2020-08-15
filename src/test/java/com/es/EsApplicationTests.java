@@ -1,8 +1,7 @@
-/*
 package com.es;
 
 import com.es.entity.Person;
-import com.es.mapper.PersonMapper;
+import com.es.service.HelloService;
 import org.elasticsearch.index.query.*;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,13 +16,13 @@ import org.springframework.data.elasticsearch.core.query.*;
 import java.util.*;
 
 @SpringBootTest
-class EsApplicationTests {
+class EsApplicationTests<T> {
 	@Autowired
-	PersonMapper personMapper;
+    HelloService helloService;
 
-	@Autowired
-	ElasticsearchTemplate template;
-	@Test
+/*	@Autowired
+	ElasticsearchTemplate template;*/
+/*	@Test
 	void contextLoads() {
 		Person person=new Person();
 		person.setId(1);
@@ -87,7 +86,18 @@ class EsApplicationTests {
 	public void test4(){
 		List list=new ArrayList();
 		list.add(new Person());
-	}
+	}*/
+
+    @Test
+    public void test5(){
+        String i="";
+        List<Object> list = getList();
+        System.out.println(list);
+    }
+
+    public  <T> List<T> getList(){
+        List<T> list=new ArrayList<>();
+        return list;
+    }
 
 }
-*/

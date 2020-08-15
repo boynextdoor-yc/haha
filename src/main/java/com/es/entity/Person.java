@@ -8,14 +8,14 @@ import org.springframework.data.elasticsearch.annotations.Document;
 import java.util.Set;
 
 //@Document(indexName = "database01",type = "person")
-@ApiModel(value = "商品信息DTO")
+@ApiModel(value = "人信息DTO")
 public class Person {
 //    @Id
-    @ApiModelProperty(name = "id", value = "序号", dataType = "string")
+    @ApiModelProperty(name = "id", value = "id", dataType = "int")
     private Integer id;
-    @ApiModelProperty(name = "personName", value = "序号", dataType = "string")
+    @ApiModelProperty(name = "personName", value = "名字", dataType = "string")
     private String personName;
-    @ApiModelProperty(name = "age", value = "序号", dataType = "string")
+    @ApiModelProperty(name = "age", value = "年龄", dataType = "int")
     private Integer age;
     private Set<String> interest;
 
